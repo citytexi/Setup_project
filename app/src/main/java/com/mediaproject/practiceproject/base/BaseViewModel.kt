@@ -3,8 +3,8 @@ package com.mediaproject.practiceproject.base
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.mediaproject.data.utils.ErrorType
-import com.mediaproject.data.utils.RemoteErrorEmitter
+import com.mediaproject.domain.utils.ErrorType
+import com.mediaproject.domain.utils.RemoteErrorEmitter
 import com.mediaproject.practiceproject.widget.utils.ScreenState
 import com.mediaproject.practiceproject.widget.utils.SingleLiveEvent
 

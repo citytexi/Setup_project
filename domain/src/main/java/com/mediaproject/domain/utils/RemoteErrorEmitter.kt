@@ -1,4 +1,4 @@
-package com.mediaproject.data.utils
+package com.mediaproject.domain.utils
 
 interface RemoteErrorEmitter {
     fun onError(msg: String)

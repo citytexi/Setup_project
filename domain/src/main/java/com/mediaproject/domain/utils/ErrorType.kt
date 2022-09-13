@@ -1,4 +1,4 @@
-package com.mediaproject.data.utils
+package com.mediaproject.domain.utils
 
 enum class ErrorType {
     NETWORK,
