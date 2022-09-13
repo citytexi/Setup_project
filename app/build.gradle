@@ -62,4 +62,10 @@ dependencies {
     kapt (Hilt.HILT_COMPILE)
     implementation (Coroutine.COROUTINE_ANDROID)
     implementation (Coroutine.COROUTINE_CORE)
+    implementation (Retrofit.RETROFIT)
+    implementation (Retrofit.RETROFIT_GSON)
+    implementation (OkHttp.OKHTTP)
+    implementation (OkHttp.OKHTTP_LOGGING)
+    implementation (Coroutine.COROUTINE_CORE)
+    implementation (Coroutine.COROUTINE_ANDROID)
 }

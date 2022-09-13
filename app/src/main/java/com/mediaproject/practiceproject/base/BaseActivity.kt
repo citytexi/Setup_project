@@ -7,10 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 
-abstract class BaseActivity<T: ViewDataBinding>(
+abstract class BaseActivity<B: ViewDataBinding>(
     @LayoutRes private val layoutResId: Int
 ) : AppCompatActivity() {
-    protected lateinit var binding: T
+    protected lateinit var binding: B
     private var waitTime = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
