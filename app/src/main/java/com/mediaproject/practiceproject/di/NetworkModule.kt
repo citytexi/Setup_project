@@ -1,7 +1,8 @@
 package com.mediaproject.practiceproject.di
 
 import android.content.Context
-import com.mediaproject.practiceproject.widget.utils.NetworkInterceptor
+import com.mediaproject.practiceproject.base.BaseApiUrl
+import com.mediaproject.practiceproject.widget.utils.interceptors.NetworkInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -33,10 +34,14 @@ object NetworkModule {
         .build()
 
     @Provides
-    fun provideNetworkInterceptor(@ApplicationContext context: Context): NetworkInterceptor = NetworkInterceptor(context)
+    fun provideNetworkInterceptor(
+        @ApplicationContext context: Context
+    ): NetworkInterceptor = NetworkInterceptor(context)
 
     @Provides
-    fun provideLoggingInterceptor(): HttpLoggingInterceptor = HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BODY }
+    fun provideLoggingInterceptor(): HttpLoggingInterceptor = HttpLoggingInterceptor().apply {
+        level = HttpLoggingInterceptor.Level.BODY
+    }
     //endregion
 
     //region Retrofit
@@ -46,11 +51,10 @@ object NetworkModule {
         okHttpClient: OkHttpClient,
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit = Retrofit.Builder()
-        .baseUrl("")
+        .baseUrl(BaseApiUrl.BASE_DOMAIN_URL)
         .client(okHttpClient)
         .addConverterFactory(gsonConverterFactory)
         .build()
-
 
     @Provides
     fun provideGsonConverterFactory(): GsonConverterFactory = GsonConverterFactory.create()

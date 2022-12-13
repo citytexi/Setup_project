@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject.widget.utils
+package com.mediaproject.practiceproject.widget.utils.interceptors
 
 import android.content.Context
 import android.net.ConnectivityManager

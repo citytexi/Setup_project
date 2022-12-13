@@ -1,6 +1,8 @@
 package com.mediaproject.data.mapper
 
+import com.mediaproject.data.remote.model.response.ResponseSaveUserDto
 import com.mediaproject.domain.model.GithubResponse
+import com.mediaproject.domain.model.SaveUserResponse
 
 object Mapper {
 
@@ -12,6 +14,15 @@ object Mapper {
         null
     }
 
+    fun mapperSaveUser(
+        response: ResponseSaveUserDto?
+    ): SaveUserResponse = when (response) {
+        null -> {
+            SaveUserResponse("")
+        }
+        else -> { response.toDomain() }
+    }
+
 
     fun List<GithubResponse>.toDomain() : List<GithubResponse> = this.map {
         GithubResponse(
@@ -21,5 +32,13 @@ object Mapper {
             url = it.url
         )
     }
+
+    private fun ResponseSaveUserDto.toDomain(): SaveUserResponse = SaveUserResponse(
+        userId = userId,
+        nickname = nickname,
+        gender = gender,
+        photoUrl = photoUrl,
+        token = token
+    )
 
 }

@@ -23,30 +23,31 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     }
 
     fun clickSearchBtn(view: View){
+        viewModel.userRepo("huihun66@ajou.ac.kr")
 //        viewModel.getUserRepo(binding.githubNameEditTxt.text.toString())
     }
 
     private fun observeViewModel() {
-        viewModel.mutableScreenState.observe(this) {
-            Log.d(TAG, "ScreenState: $it")
-            when (it) {
-                ScreenState.RENDER -> {
-                    shortShowToast("성공!")
-                }
-                ScreenState.LOADING -> {
-                    shortShowToast("로딩중")
-                }
-                ScreenState.ERROR -> {
-                    shortShowToast("에러 발생!")
-                }
-                else -> {
-                    shortShowToast("알 수 없는 에러 발생!")
-                }
-            }
-        }
-        viewModel.eventUserRepo.observe(this) {
-            it.map { item ->
-            }
-        }
+//        viewModel.mutableScreenState.observe(this) {
+//            Log.d(TAG, "ScreenState: $it")
+//            when (it) {
+//                ScreenState.RENDER -> {
+//                    shortShowToast("성공!")
+//                }
+//                ScreenState.LOADING -> {
+//                    shortShowToast("로딩중")
+//                }
+//                ScreenState.ERROR -> {
+//                    shortShowToast("에러 발생!")
+//                }
+//                else -> {
+//                    shortShowToast("알 수 없는 에러 발생!")
+//                }
+//            }
+//        }
+//        viewModel.eventUserRepo.observe(this) {
+//            it.map { item ->
+//            }
+//        }
     }
 }

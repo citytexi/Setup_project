@@ -2,10 +2,10 @@
 
 object Versions {
     const val VERSION_KTX = "1.9.0"
-    const val VERSION_NAV = "2.5.2"
-    const val VERSION_LIFE = "2.6.0-alpha02"
+    const val VERSION_NAV = "2.5.3"
+    const val VERSION_LIFE = "2.6.0-alpha03"
     const val VERSION_ROOM = "2.4.3"
-    const val VERSION_HILT = "2.43.2"
+    const val VERSION_HILT = "2.44"
     const val VERSION_COROUTINE = "1.6.4"
     const val VERSION_RETROFIT = "2.9.0"
     const val VERSION_OKHTTP = "4.9.2"
@@ -17,13 +17,13 @@ object KTX {
 }
 
 object AndroidX {
-    const val MATERIAL_JETPACK = "androidx.compose.material:material:1.3.0-beta02"
-    const val MATERIAL = "com.google.android.material:material:1.6.1"
+    const val MATERIAL_JETPACK = "androidx.compose.material:material:1.4.0-alpha03"
+    const val MATERIAL = "com.google.android.material:material:1.7.0"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.1.4"
     const val APP_COMPAT = "androidx.appcompat:appcompat:1.5.1"
     const val LEGACY = "androidx.legacy:legacy-support-v4:1.0.0"
-    const val ACTIVITY = "androidx.activity:activity-ktx:1.5.1"
-    const val FRAGMENT = "androidx.fragment:fragment-ktx:1.5.2"
+    const val ACTIVITY = "androidx.activity:activity-ktx:1.6.1"
+    const val FRAGMENT = "androidx.fragment:fragment-ktx:1.5.5"
     const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
 }
 
