@@ -2,7 +2,7 @@ package com.mediaproject.practiceproject.di
 
 import android.content.Context
 import com.mediaproject.practiceproject.base.BaseApiUrl
-import com.mediaproject.practiceproject.widget.utils.NetworkInterceptor
+import com.mediaproject.practiceproject.widget.utils.interceptors.NetworkInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
