@@ -1,14 +1,20 @@
 # Media Project Toy
 
 ## 최종 수정일
+
+---------------------------------------------------
 + 2022/10/03 월 13시
 
 ## 프로젝트 구분
+
+---------------------------------------------------
     미디어프로젝트 수업을 위한 멀티 모듈 initial setting
 
 ----------------------------------------------------
 
 ## Package 구성
+
+---------------------------------------------------
 + **module (:app)**
   > Base, DI, View, ViewModel, Widget
 + **module (:data)**
@@ -16,9 +22,17 @@
 + **module (:domain)**
   > Model, Repository, UseCase, Utils
 
-----------------------------------------------------
+
+## Work in
+
+---------------------------------------------------
+<img src="https://img.shields.io/badge/Kotlin-black?logo=Kotlin&logoColor=ColorName&style=ShieldStyle" />
+<img src="https://img.shields.io/badge/AndroidStudio-black?logo=AndroidStudio&logoColor=ColorName&style=ShieldStyle" />
+<img src="https://img.shields.io/badge/GitHub-black?logo=GitHub&logoColor=ColorName&style=ShieldStyle" />
 
 ## Version 
+
+---------------------------------------------------
 + **buildSrc/main/java/Dependency.kt 에서 확인 가능**
 + **AndroidX**
   + _MATERIAL_JETPACK_
