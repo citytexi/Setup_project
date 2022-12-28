@@ -23,7 +23,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     }
 
     fun clickSearchBtn(view: View){
-        viewModel.userRepo("huihun66@ajou.ac.kr")
 //        viewModel.getUserRepo(binding.githubNameEditTxt.text.toString())
     }
 

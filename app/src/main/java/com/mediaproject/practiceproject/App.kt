@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject.di
+package com.mediaproject.practiceproject
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

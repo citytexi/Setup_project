@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject
+package com.mediaproject.presentation
 
 import org.junit.Test
 
