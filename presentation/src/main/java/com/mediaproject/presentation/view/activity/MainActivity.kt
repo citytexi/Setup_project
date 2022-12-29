@@ -2,10 +2,12 @@ package com.mediaproject.presentation.view.activity
 
 import android.view.View
 import androidx.activity.viewModels
+import com.mediaproject.domain.utils.ErrorState
 import com.mediaproject.practiceproject.R
 import com.mediaproject.presentation.base.BaseActivity
 import com.mediaproject.practiceproject.databinding.ActivityMainBinding
 import com.mediaproject.presentation.viewmodel.MainActViewModel
+import com.mediaproject.presentation.widget.states.UIState
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -17,34 +19,42 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     private val viewModel by viewModels<MainActViewModel>()
 
     override fun init() {
-
-    }
-
-    fun clickSearchBtn(view: View){
-//        viewModel.getUserRepo(binding.githubNameEditTxt.text.toString())
+        observeViewModel()
     }
 
     private fun observeViewModel() {
-//        viewModel.mutableScreenState.observe(this) {
-//            Log.d(TAG, "ScreenState: $it")
-//            when (it) {
-//                ScreenState.RENDER -> {
-//                    shortShowToast("성공!")
-//                }
-//                ScreenState.LOADING -> {
-//                    shortShowToast("로딩중")
-//                }
-//                ScreenState.ERROR -> {
-//                    shortShowToast("에러 발생!")
-//                }
-//                else -> {
-//                    shortShowToast("알 수 없는 에러 발생!")
-//                }
-//            }
-//        }
-//        viewModel.eventUserRepo.observe(this) {
-//            it.map { item ->
-//            }
-//        }
+        if (viewModel.uiState.hasActiveObservers()) {
+            viewModel.uiState.removeObservers(this)
+        }
+        viewModel.uiState.observe(this) { state -> observedUIState(state) }
     }
+
+    private fun observedUIState(state: UIState) = when (state) {
+        is UIState.Loading -> {
+            TODO("Loading State")
+        }
+        is UIState.Success -> {
+            TODO("Success State")
+        }
+        is UIState.Failure -> {
+            when (state.errorState) {
+                is ErrorState.NetworkError -> {
+
+                }
+                is ErrorState.TimeOutError -> {
+
+                }
+                is ErrorState.NotFoundResults -> {
+
+                }
+                is ErrorState.SessionExpiredError -> {
+
+                }
+                is ErrorState.UnknownError -> {
+
+                }
+            }
+        }
+    }
+
 }

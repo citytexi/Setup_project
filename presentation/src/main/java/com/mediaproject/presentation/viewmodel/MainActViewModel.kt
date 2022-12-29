@@ -1,8 +1,12 @@
 package com.mediaproject.presentation.viewmodel
 
 import android.content.SharedPreferences
+import android.provider.Contacts.Intents.UI
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.mediaproject.presentation.base.BaseViewModel
+import com.mediaproject.presentation.widget.states.UIState
+import com.mediaproject.presentation.widget.utils.SingleLiveEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -12,20 +16,15 @@ class MainActViewModel
 @Inject
 constructor(
     private val sharedPreferences: SharedPreferences,
-) : BaseViewModel() {
+) : ViewModel() {
     companion object {
         private const val TAG = "[MainAVM]"
     }
 
+    private val _uiState = SingleLiveEvent<UIState>()
+    val uiState: LiveData<UIState>
+        get() = _uiState
 
-    fun getUserRepo(owner: String) = viewModelScope.launch {
-//        val response = getUserRepoUseCase.execute(this@MainActViewModel, owner)
-//        if(response == null) {
-//            mutableScreenState.postValue(ScreenState.ERROR)
-//        } else {
-//            mutableScreenState.postValue(ScreenState.RENDER)
-//            _eventUserRepo.postValue(response!!)
-//        }
-    }
+
 
 }
