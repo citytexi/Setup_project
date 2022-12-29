@@ -1,14 +1,9 @@
-package com.mediaproject.practiceproject.viewmodel
+package com.mediaproject.presentation.viewmodel
 
 import android.content.SharedPreferences
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.mediaproject.practiceproject.base.BaseViewModel
-import com.mediaproject.practiceproject.widget.utils.ScreenState
-import com.mediaproject.practiceproject.widget.utils.SingleLiveEvent
+import com.mediaproject.presentation.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

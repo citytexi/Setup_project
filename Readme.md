@@ -3,7 +3,7 @@
 ## 최종 수정일
 
 ---------------------------------------------------
-+ 2022/10/03 월 13시
++ 2022/12/29
 
 ## 프로젝트 구분
 
@@ -16,12 +16,13 @@
 
 ---------------------------------------------------
 + **module (:app)**
-  > Base, DI, View, ViewModel, Widget
+  > DI, Widget
 + **module (:data)**
   > DB, Mapper, Remote, Repository
 + **module (:domain)**
   > Model, Repository, UseCase, Utils
-
++ **module (:presentation)**
+  > Base, View, ViewModel, Widget
 
 ## Work in
 

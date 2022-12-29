@@ -1,13 +1,11 @@
-package com.mediaproject.practiceproject.view.activity
+package com.mediaproject.presentation.view.activity
 
-import android.util.Log
 import android.view.View
 import androidx.activity.viewModels
 import com.mediaproject.practiceproject.R
-import com.mediaproject.practiceproject.base.BaseActivity
+import com.mediaproject.presentation.base.BaseActivity
 import com.mediaproject.practiceproject.databinding.ActivityMainBinding
-import com.mediaproject.practiceproject.viewmodel.MainActViewModel
-import com.mediaproject.practiceproject.widget.utils.ScreenState
+import com.mediaproject.presentation.viewmodel.MainActViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

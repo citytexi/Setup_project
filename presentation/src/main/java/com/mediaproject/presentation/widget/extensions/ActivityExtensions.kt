@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject.widget.extensions
+package com.mediaproject.presentation.widget.extensions
 
 import android.content.Context
 import android.content.Intent

@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject.widget.utils
+package com.mediaproject.presentation.widget.utils
 
 import android.util.Log
 import androidx.annotation.MainThread

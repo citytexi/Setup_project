@@ -1,4 +1,4 @@
-package com.mediaproject.practiceproject.base
+package com.mediaproject.presentation.base
 
 import android.os.Bundle
 import android.widget.Toast
