@@ -54,5 +54,7 @@ dependencies {
     implementation(OkHttp.OKHTTP_LOGGING)
     implementation(Coroutine.COROUTINE_CORE)
     implementation(Coroutine.COROUTINE_ANDROID)
-
+    implementation(Room.ROOM_KTX)
+    implementation(Room.ROOM_RUNTIME)
+    kapt(Room.ROOM_COMPILE)
 }
