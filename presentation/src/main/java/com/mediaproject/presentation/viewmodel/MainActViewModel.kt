@@ -13,6 +13,9 @@ class MainActViewModel
 constructor(
     private val sharedPreferences: SharedPreferences,
 ) : BaseViewModel() {
+    companion object {
+        private const val TAG = "[MainAVM]"
+    }
 
 
     fun getUserRepo(owner: String) = viewModelScope.launch {

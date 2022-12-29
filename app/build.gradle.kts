@@ -59,4 +59,7 @@ dependencies {
     implementation(Retrofit.RETROFIT_GSON)
     implementation(OkHttp.OKHTTP)
     implementation(OkHttp.OKHTTP_LOGGING)
+    implementation(Room.ROOM_KTX)
+    implementation(Room.ROOM_RUNTIME)
+    kapt(Room.ROOM_COMPILE)
 }

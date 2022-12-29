@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     companion object {
-        const val TAG = "[MainAct]"
+        private const val TAG = "[MainAct]"
     }
 
     private val viewModel by viewModels<MainActViewModel>()
