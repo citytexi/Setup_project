@@ -1,14 +1,14 @@
-# Media Project Toy
+# Setup_project
 
 ## 최종 수정일
 
 ---------------------------------------------------
-+ 2022/12/29
++ 2023/01/07
 
 ## 프로젝트 구분
 
 ---------------------------------------------------
-    미디어프로젝트 수업을 위한 멀티 모듈 initial setting
+    Multi module initial setting
 
 ----------------------------------------------------
 
@@ -27,9 +27,7 @@
 ## Work in
 
 ---------------------------------------------------
-<img src="https://img.shields.io/badge/Kotlin-black?logo=Kotlin&logoColor=ColorName&style=ShieldStyle" />
-<img src="https://img.shields.io/badge/AndroidStudio-black?logo=AndroidStudio&logoColor=ColorName&style=ShieldStyle" />
-<img src="https://img.shields.io/badge/GitHub-black?logo=GitHub&logoColor=ColorName&style=ShieldStyle" />
+<img src="https://img.shields.io/badge/Kotlin-black?logo=Kotlin&logoColor=ColorName&style=ShieldStyle" /> <img src="https://img.shields.io/badge/AndroidStudio-black?logo=AndroidStudio&logoColor=ColorName&style=ShieldStyle" /> <img src="https://img.shields.io/badge/GitHub-black?logo=GitHub&logoColor=ColorName&style=ShieldStyle" />
 
 ## Version 
 
